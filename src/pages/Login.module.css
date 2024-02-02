@@ -1,0 +1,8 @@
+.page {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}

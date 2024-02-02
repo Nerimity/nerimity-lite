@@ -1,0 +1,87 @@
+.page {
+  height: 100vh;
+  display: flex;
+
+}
+
+.pane {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 8px;
+  padding-right: 18px;
+  padding-left: 18px;
+  overflow: auto;
+  padding-bottom: 18px;
+}
+.pane:first-child {
+  border-right: solid 1px;
+
+}
+.pane:nth-last-child(1) {
+  border-left: solid 1px;
+}
+
+.pane a {
+  color: #fff;
+  flex-shrink: 0;
+}
+.pane .active {
+  color: var(--primary)
+}
+
+.nestedTreeItem {
+  margin-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.treeNestedList {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.mainPane {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+.messageLog {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  overflow: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+} 
+
+.message {
+  display: flex;
+  gap: 8px;
+}
+.message .details {
+  display: flex;
+  gap: 8px;
+  border-right: solid 1px;
+  padding-right: 8px;
+  width: 140px;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.message .username {
+  font-weight: bold;
+}
+.message .content {
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
